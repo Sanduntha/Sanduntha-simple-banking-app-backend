@@ -34,7 +34,6 @@ public class UserServiceImpl implements UserService {
         return "Registration successful!";
     }
 
-
     @Override
     public String login(LoginDto loginDto) {
         Optional<User> optionalUser = userRepo.findByEmail(loginDto.getEmail());
